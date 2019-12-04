@@ -1,0 +1,1809 @@
+! Started logfile: difmap.log_4 on Tue Nov 26 19:27:46 2019
+obs 2200+420.u.2015_05_18.uvf_raw_edt
+! Reading UV FITS file: 2200+420.u.2015_05_18.uvf_raw_edt
+! AN table 1: 313 integrations on 45 of 45 possible baselines.
+! Apparent sampling: 0.920696 visibilities/baseline/integration-bin.
+! Found source: 2200+420
+! 
+! There are 8 IFs, and a total of 8 channels:
+! 
+!  IF  Channel    Frequency  Freq offset  Number of   Overall IF
+!       origin    at origin  per channel   channels    bandwidth
+!  ------------------------------------------------------------- (Hz)
+!  01        1  1.52399e+10      3.2e+07          1      3.2e+07
+!  02        2  1.52719e+10      3.2e+07          1      3.2e+07
+!  03        3  1.53039e+10      3.2e+07          1      3.2e+07
+!  04        4  1.53359e+10      3.2e+07          1      3.2e+07
+!  05        5  1.53679e+10      3.2e+07          1      3.2e+07
+!  06        6  1.53999e+10      3.2e+07          1      3.2e+07
+!  07        7  1.54319e+10      3.2e+07          1      3.2e+07
+!  08        8  1.54639e+10      3.2e+07          1      3.2e+07
+! 
+! Polarization(s): RR LL RL LR
+! 
+! Read 1621 lines of history.
+! 
+! Reading 414976 visibilities.
+select I
+! Selecting polarization: I,  channels: 1..8
+! Reading IF 1 channels: 1..1
+! Reading IF 2 channels: 2..2
+! Reading IF 3 channels: 3..3
+! Reading IF 4 channels: 4..4
+! Reading IF 5 channels: 5..5
+! Reading IF 6 channels: 6..6
+! Reading IF 7 channels: 7..7
+! Reading IF 8 channels: 8..8
+radplot
+! Using default options string "m1"
+! Move the cursor into the plot window and press 'H' for help
+mapsize 1024,0.1
+! Map grid = 1024x1024 pixels with 0.100x0.100 milli-arcsec cellsize.
+maplot
+! Inverting map and beam 
+! Estimated beam: bmin=0.4514 mas, bmaj=0.692 mas, bpa=-7.177 degrees
+! Estimated noise=0.265022 mJy/beam.
+! 
+! Move the cursor into the plot window and press 'H' for help
+uwv
+! Syntax error in line:
+! uwv
+!   ^
+! Unable to identify keyword "uwv"
+! 
+uvw 2, -1
+! Uniform weighting binwidth: 2 (pixels).
+! Gridding weights will be scaled by errors raised to the power -1.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.4485 mas, bmaj=0.6804 mas, bpa=-11.92 degrees
+! Estimated noise=0.222649 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.84946 Jy
+! Component: 100  -  total flux cleaned = 2.40082 Jy
+! Total flux subtracted in 100 components = 2.40082 Jy
+! Clean residual min=-0.066407 max=0.237999 Jy/beam
+! Clean residual mean=-0.000177 rms=0.013829 Jy/beam
+! Combined flux in latest and established models = 2.40082 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 2, -1
+! Uniform weighting binwidth: 2 (pixels).
+! Gridding weights will be scaled by errors raised to the power -1.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.4485 mas, bmaj=0.6804 mas, bpa=-11.92 degrees
+! Estimated noise=0.222649 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.84946 Jy
+! Component: 100  -  total flux cleaned = 2.40187 Jy
+! Total flux subtracted in 100 components = 2.40187 Jy
+! Clean residual min=-0.066030 max=0.233622 Jy/beam
+! Clean residual mean=-0.000176 rms=0.013785 Jy/beam
+! Combined flux in latest and established models = 2.40187 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 500, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.585 mas, bmaj=0.8553 mas, bpa=-13.09 degrees
+! Estimated noise=0.0762278 mJy/beam.
+! clean: niter=500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.9743 Jy
+! Component: 100  -  total flux cleaned = 2.5217 Jy
+! Component: 150  -  total flux cleaned = 2.77977 Jy
+! Component: 200  -  total flux cleaned = 2.93898 Jy
+! Component: 250  -  total flux cleaned = 3.04433 Jy
+! Component: 300  -  total flux cleaned = 3.11722 Jy
+! Component: 350  -  total flux cleaned = 3.16796 Jy
+! Component: 400  -  total flux cleaned = 3.20336 Jy
+! Component: 450  -  total flux cleaned = 3.22827 Jy
+! Component: 500  -  total flux cleaned = 3.24584 Jy
+! Total flux subtracted in 500 components = 3.24584 Jy
+! Clean residual min=-0.036911 max=0.075078 Jy/beam
+! Clean residual mean=-0.000069 rms=0.008176 Jy/beam
+! Combined flux in latest and established models = 3.24584 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw -1, 2
+! Uniform weighting is not currently selected.
+! Amplitude error weighting is not currently selected.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5902 mas, bmaj=0.8744 mas, bpa=-4.459 degrees
+! Estimated noise=0.0903712 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 2.01023 Jy
+! Component: 100  -  total flux cleaned = 2.55145 Jy
+! Total flux subtracted in 100 components = 2.55145 Jy
+! Clean residual min=-0.047846 max=0.225236 Jy/beam
+! Clean residual mean=-0.000399 rms=0.016172 Jy/beam
+! Combined flux in latest and established models = 2.55145 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw -1, 2
+! Uniform weighting is not currently selected.
+! Amplitude error weighting is not currently selected.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5902 mas, bmaj=0.8744 mas, bpa=-4.459 degrees
+! Estimated noise=0.0903712 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 2.01023 Jy
+! Component: 100  -  total flux cleaned = 2.55145 Jy
+! Total flux subtracted in 100 components = 2.55145 Jy
+! Clean residual min=-0.047846 max=0.225236 Jy/beam
+! Clean residual mean=-0.000399 rms=0.016172 Jy/beam
+! Combined flux in latest and established models = 2.55145 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 500, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.585 mas, bmaj=0.8553 mas, bpa=-13.09 degrees
+! Estimated noise=0.0762278 mJy/beam.
+! clean: niter=500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.9743 Jy
+! Component: 100  -  total flux cleaned = 2.5217 Jy
+! Component: 150  -  total flux cleaned = 2.77977 Jy
+! Component: 200  -  total flux cleaned = 2.93916 Jy
+! Component: 250  -  total flux cleaned = 3.04924 Jy
+! Component: 300  -  total flux cleaned = 3.13505 Jy
+! Component: 350  -  total flux cleaned = 3.20589 Jy
+! Component: 400  -  total flux cleaned = 3.26644 Jy
+! Component: 450  -  total flux cleaned = 3.31904 Jy
+! Component: 500  -  total flux cleaned = 3.36525 Jy
+! Total flux subtracted in 500 components = 3.36525 Jy
+! Clean residual min=-0.028428 max=0.030965 Jy/beam
+! Clean residual mean=-0.000066 rms=0.006641 Jy/beam
+! Combined flux in latest and established models = 3.36525 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 1000, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.585 mas, bmaj=0.8553 mas, bpa=-13.09 degrees
+! Estimated noise=0.0762278 mJy/beam.
+! clean: niter=1000  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.9743 Jy
+! Component: 100  -  total flux cleaned = 2.5217 Jy
+! Component: 150  -  total flux cleaned = 2.77977 Jy
+! Component: 200  -  total flux cleaned = 2.93916 Jy
+! Component: 250  -  total flux cleaned = 3.04924 Jy
+! Component: 300  -  total flux cleaned = 3.13505 Jy
+! Component: 350  -  total flux cleaned = 3.20589 Jy
+! Component: 400  -  total flux cleaned = 3.26644 Jy
+! Component: 450  -  total flux cleaned = 3.31904 Jy
+! Component: 500  -  total flux cleaned = 3.36525 Jy
+! Component: 550  -  total flux cleaned = 3.40633 Jy
+! Component: 600  -  total flux cleaned = 3.44307 Jy
+! Component: 650  -  total flux cleaned = 3.476 Jy
+! Component: 700  -  total flux cleaned = 3.50564 Jy
+! Component: 750  -  total flux cleaned = 3.53246 Jy
+! Component: 800  -  total flux cleaned = 3.55675 Jy
+! Component: 850  -  total flux cleaned = 3.57708 Jy
+! Component: 900  -  total flux cleaned = 3.59327 Jy
+! Component: 950  -  total flux cleaned = 3.60675 Jy
+! Component: 1000  -  total flux cleaned = 3.6179 Jy
+! Total flux subtracted in 1000 components = 3.6179 Jy
+! Clean residual min=-0.031548 max=0.023611 Jy/beam
+! Clean residual mean=-0.000010 rms=0.005469 Jy/beam
+! Combined flux in latest and established models = 3.6179 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal
+! Performing phase self-cal
+! Adding 128 model components to the UV plane model.
+! The established model now contains 128 components and 3.6179 Jy
+! 
+! Correcting IF 1.
+!  A total of 169 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 2.
+!  A total of 169 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 3.
+!  A total of 169 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 4.
+!  A total of 170 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 5.
+!  A total of 168 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 6.
+!  A total of 168 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 7.
+!  A total of 168 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 8.
+!  A total of 169 telescope corrections were flagged in sub-array 1.
+! 
+! Fit before self-cal, rms=0.211563Jy  sigma=5.753885
+! Fit after  self-cal, rms=0.193775Jy  sigma=5.222224
+mapl
+! Inverting map and beam 
+! Estimated beam: bmin=0.5851 mas, bmaj=0.8554 mas, bpa=-13.08 degrees
+! Estimated noise=0.0762293 mJy/beam.
+! 
+! Move the cursor into the plot window and press 'H' for help
+clean 100, 0.03
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 0.0178565 Jy
+! Component: 100  -  total flux cleaned = 0.0227925 Jy
+! Total flux subtracted in 100 components = 0.0227925 Jy
+! Clean residual min=-0.025828 max=0.018306 Jy/beam
+! Clean residual mean=-0.000004 rms=0.004601 Jy/beam
+! Combined flux in latest and established models = 3.64069 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 700, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5851 mas, bmaj=0.8554 mas, bpa=-13.08 degrees
+! Estimated noise=0.0762293 mJy/beam.
+! clean: niter=700  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.97372 Jy
+! Component: 100  -  total flux cleaned = 2.52312 Jy
+! Component: 150  -  total flux cleaned = 2.79242 Jy
+! Component: 200  -  total flux cleaned = 2.95969 Jy
+! Component: 250  -  total flux cleaned = 3.07211 Jy
+! Component: 300  -  total flux cleaned = 3.15784 Jy
+! Component: 350  -  total flux cleaned = 3.22774 Jy
+! Component: 400  -  total flux cleaned = 3.28698 Jy
+! Component: 450  -  total flux cleaned = 3.33806 Jy
+! Component: 500  -  total flux cleaned = 3.38249 Jy
+! Component: 550  -  total flux cleaned = 3.42147 Jy
+! Component: 600  -  total flux cleaned = 3.45614 Jy
+! Component: 650  -  total flux cleaned = 3.48711 Jy
+! Component: 700  -  total flux cleaned = 3.5139 Jy
+! Total flux subtracted in 700 components = 3.5139 Jy
+! Clean residual min=-0.025535 max=0.021123 Jy/beam
+! Clean residual mean=-0.000028 rms=0.005040 Jy/beam
+! Combined flux in latest and established models = 3.5139 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+clean 1000, 0.03
+! Inverting map 
+! clean: niter=1000  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.97372 Jy
+! Component: 100  -  total flux cleaned = 2.52312 Jy
+! Component: 150  -  total flux cleaned = 2.79242 Jy
+! Component: 200  -  total flux cleaned = 2.95969 Jy
+! Component: 250  -  total flux cleaned = 3.07211 Jy
+! Component: 300  -  total flux cleaned = 3.15784 Jy
+! Component: 350  -  total flux cleaned = 3.22774 Jy
+! Component: 400  -  total flux cleaned = 3.28698 Jy
+! Component: 450  -  total flux cleaned = 3.33806 Jy
+! Component: 500  -  total flux cleaned = 3.38249 Jy
+! Component: 550  -  total flux cleaned = 3.42147 Jy
+! Component: 600  -  total flux cleaned = 3.45614 Jy
+! Component: 650  -  total flux cleaned = 3.48711 Jy
+! Component: 700  -  total flux cleaned = 3.5139 Jy
+! Component: 750  -  total flux cleaned = 3.53425 Jy
+! Component: 800  -  total flux cleaned = 3.55296 Jy
+! Component: 850  -  total flux cleaned = 3.57018 Jy
+! Component: 900  -  total flux cleaned = 3.58604 Jy
+! Component: 950  -  total flux cleaned = 3.59995 Jy
+! Component: 1000  -  total flux cleaned = 3.61284 Jy
+! Total flux subtracted in 1000 components = 3.61284 Jy
+! Clean residual min=-0.027105 max=0.019234 Jy/beam
+! Clean residual mean=-0.000008 rms=0.004583 Jy/beam
+! Combined flux in latest and established models = 3.61284 Jy
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 1000, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5851 mas, bmaj=0.8554 mas, bpa=-13.08 degrees
+! Estimated noise=0.0762293 mJy/beam.
+! clean: niter=1000  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.97372 Jy
+! Component: 100  -  total flux cleaned = 2.52312 Jy
+! Component: 150  -  total flux cleaned = 2.79242 Jy
+! Component: 200  -  total flux cleaned = 2.95969 Jy
+! Component: 250  -  total flux cleaned = 3.07211 Jy
+! Component: 300  -  total flux cleaned = 3.15784 Jy
+! Component: 350  -  total flux cleaned = 3.22774 Jy
+! Component: 400  -  total flux cleaned = 3.28698 Jy
+! Component: 450  -  total flux cleaned = 3.33806 Jy
+! Component: 500  -  total flux cleaned = 3.38249 Jy
+! Component: 550  -  total flux cleaned = 3.42147 Jy
+! Component: 600  -  total flux cleaned = 3.45614 Jy
+! Component: 650  -  total flux cleaned = 3.48711 Jy
+! Component: 700  -  total flux cleaned = 3.5139 Jy
+! Component: 750  -  total flux cleaned = 3.53425 Jy
+! Component: 800  -  total flux cleaned = 3.55296 Jy
+! Component: 850  -  total flux cleaned = 3.57018 Jy
+! Component: 900  -  total flux cleaned = 3.58604 Jy
+! Component: 950  -  total flux cleaned = 3.59995 Jy
+! Component: 1000  -  total flux cleaned = 3.61284 Jy
+! Total flux subtracted in 1000 components = 3.61284 Jy
+! Clean residual min=-0.027105 max=0.019234 Jy/beam
+! Clean residual mean=-0.000008 rms=0.004583 Jy/beam
+! Combined flux in latest and established models = 3.61284 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal
+! Performing phase self-cal
+! Adding 131 model components to the UV plane model.
+! The established model now contains 131 components and 3.61284 Jy
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.186497Jy  sigma=5.049336
+! Fit after  self-cal, rms=0.183001Jy  sigma=4.955158
+selfcal
+! Performing phase self-cal
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.183001Jy  sigma=4.955158
+! Fit after  self-cal, rms=0.183000Jy  sigma=4.955157
+selfcal true, true, 1e6
+! Performing amp+phase self-cal over 1e+06 minute time intervals
+! 
+! Correcting IF 1.
+!  A total of 3 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 2.
+!  A total of 3 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 3.
+!  A total of 3 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 4.
+!  A total of 3 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 5.
+!  A total of 3 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 6.
+!  A total of 3 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 7.
+!  A total of 3 telescope corrections were flagged in sub-array 1.
+! 
+! Correcting IF 8.
+!  A total of 3 telescope corrections were flagged in sub-array 1.
+! 
+! Fit before self-cal, rms=0.183000Jy  sigma=4.955157
+! Fit after  self-cal, rms=0.164953Jy  sigma=4.023270
+corplot
+! Move the cursor into the plot window and press 'H' for help
+mapl
+! Inverting map and beam 
+! Estimated beam: bmin=0.5831 mas, bmaj=0.8549 mas, bpa=-11.65 degrees
+! Estimated noise=0.0761725 mJy/beam.
+! 
+! Move the cursor into the plot window and press 'H' for help
+uvw 1, -2
+! Uniform weighting binwidth: 1 (pixels).
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.4188 mas, bmaj=0.6395 mas, bpa=-14.77 degrees
+! Estimated noise=0.18235 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = -0.00694471 Jy
+! Component: 100  -  total flux cleaned = -0.00601821 Jy
+! Total flux subtracted in 100 components = -0.00601821 Jy
+! Clean residual min=-0.022752 max=0.021432 Jy/beam
+! Clean residual mean=0.000006 rms=0.004075 Jy/beam
+! Combined flux in latest and established models = 3.60682 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl cln
+! restore: Substituting estimate of restoring beam from last 'invert'.
+! Restoring with beam: 0.4188 x 0.6395 at -14.77 degrees (North through East)
+! Clean map  min=-0.017732  max=2.29 Jy/beam
+! Clean map  min=-0.017732  max=2.2893 Jy/beam
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl
+! Adding 14 model components to the UV plane model.
+! The established model now contains 140 components and 3.60682 Jy
+! Inverting map 
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal
+! Performing phase self-cal
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.162595Jy  sigma=3.931156
+! Fit after  self-cal, rms=0.162384Jy  sigma=3.926412
+mapl
+! Inverting map 
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal true, true, 120
+! Performing amp+phase self-cal over 120 minute time intervals
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.162384Jy  sigma=3.926412
+! Fit after  self-cal, rms=0.098753Jy  sigma=2.650635
+mapl
+! Inverting map and beam 
+! Estimated beam: bmin=0.4175 mas, bmaj=0.6495 mas, bpa=-12.65 degrees
+! Estimated noise=0.183572 mJy/beam.
+! 
+! Move the cursor into the plot window and press 'H' for help
+corplot
+! Move the cursor into the plot window and press 'H' for help
+clean 100, 0.03
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = -0.00969389 Jy
+! Component: 100  -  total flux cleaned = -0.00907054 Jy
+! Total flux subtracted in 100 components = -0.00907054 Jy
+! Clean residual min=-0.015126 max=0.014433 Jy/beam
+! Clean residual mean=0.000006 rms=0.002605 Jy/beam
+! Combined flux in latest and established models = 3.59775 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw -1, 2
+! Uniform weighting is not currently selected.
+! Amplitude error weighting is not currently selected.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5903 mas, bmaj=0.8745 mas, bpa=-4.426 degrees
+! Estimated noise=0.0898773 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.9974 Jy
+! Component: 100  -  total flux cleaned = 2.53354 Jy
+! Total flux subtracted in 100 components = 2.53354 Jy
+! Clean residual min=-0.045188 max=0.231436 Jy/beam
+! Clean residual mean=-0.000390 rms=0.015519 Jy/beam
+! Combined flux in latest and established models = 2.53354 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw -1, 2
+! Uniform weighting is not currently selected.
+! Amplitude error weighting is not currently selected.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5903 mas, bmaj=0.8745 mas, bpa=-4.426 degrees
+! Estimated noise=0.0898773 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.9974 Jy
+! Component: 100  -  total flux cleaned = 2.53354 Jy
+! Total flux subtracted in 100 components = 2.53354 Jy
+! Clean residual min=-0.045188 max=0.231436 Jy/beam
+! Clean residual mean=-0.000390 rms=0.015519 Jy/beam
+! Combined flux in latest and established models = 2.53354 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 900, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5806 mas, bmaj=0.8664 mas, bpa=-10.05 degrees
+! Estimated noise=0.0764124 mJy/beam.
+! clean: niter=900  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.98594 Jy
+! Component: 100  -  total flux cleaned = 2.52691 Jy
+! Component: 150  -  total flux cleaned = 2.79346 Jy
+! Component: 200  -  total flux cleaned = 2.95576 Jy
+! Component: 250  -  total flux cleaned = 3.06255 Jy
+! Component: 300  -  total flux cleaned = 3.14366 Jy
+! Component: 350  -  total flux cleaned = 3.20959 Jy
+! Component: 400  -  total flux cleaned = 3.26482 Jy
+! Component: 450  -  total flux cleaned = 3.3114 Jy
+! Component: 500  -  total flux cleaned = 3.35088 Jy
+! Component: 550  -  total flux cleaned = 3.38479 Jy
+! Component: 600  -  total flux cleaned = 3.41405 Jy
+! Component: 650  -  total flux cleaned = 3.4394 Jy
+! Component: 700  -  total flux cleaned = 3.46166 Jy
+! Component: 750  -  total flux cleaned = 3.48141 Jy
+! Component: 800  -  total flux cleaned = 3.49903 Jy
+! Component: 850  -  total flux cleaned = 3.51479 Jy
+! Component: 900  -  total flux cleaned = 3.52889 Jy
+! Total flux subtracted in 900 components = 3.52889 Jy
+! Clean residual min=-0.010314 max=0.015503 Jy/beam
+! Clean residual mean=-0.000021 rms=0.002485 Jy/beam
+! Combined flux in latest and established models = 3.52889 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmode
+! Syntax error in line:
+! clrmode
+!       ^
+! Unable to identify keyword "clrmode"
+! 
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw -1, 2
+! Uniform weighting is not currently selected.
+! Amplitude error weighting is not currently selected.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5903 mas, bmaj=0.8745 mas, bpa=-4.426 degrees
+! Estimated noise=0.0898773 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.9974 Jy
+! Component: 100  -  total flux cleaned = 2.53354 Jy
+! Total flux subtracted in 100 components = 2.53354 Jy
+! Clean residual min=-0.045188 max=0.231436 Jy/beam
+! Clean residual mean=-0.000390 rms=0.015519 Jy/beam
+! Combined flux in latest and established models = 2.53354 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 900, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5806 mas, bmaj=0.8664 mas, bpa=-10.05 degrees
+! Estimated noise=0.0764124 mJy/beam.
+! clean: niter=900  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.98594 Jy
+! Component: 100  -  total flux cleaned = 2.52691 Jy
+! Component: 150  -  total flux cleaned = 2.79346 Jy
+! Component: 200  -  total flux cleaned = 2.95576 Jy
+! Component: 250  -  total flux cleaned = 3.06255 Jy
+! Component: 300  -  total flux cleaned = 3.14366 Jy
+! Component: 350  -  total flux cleaned = 3.20969 Jy
+! Component: 400  -  total flux cleaned = 3.26501 Jy
+! Component: 450  -  total flux cleaned = 3.31159 Jy
+! Component: 500  -  total flux cleaned = 3.35104 Jy
+! Component: 550  -  total flux cleaned = 3.38497 Jy
+! Component: 600  -  total flux cleaned = 3.41441 Jy
+! Component: 650  -  total flux cleaned = 3.44023 Jy
+! Component: 700  -  total flux cleaned = 3.46318 Jy
+! Component: 750  -  total flux cleaned = 3.48379 Jy
+! Component: 800  -  total flux cleaned = 3.50239 Jy
+! Component: 850  -  total flux cleaned = 3.51922 Jy
+! Component: 900  -  total flux cleaned = 3.53451 Jy
+! Total flux subtracted in 900 components = 3.53451 Jy
+! Clean residual min=-0.010093 max=0.010789 Jy/beam
+! Clean residual mean=-0.000021 rms=0.002403 Jy/beam
+! Combined flux in latest and established models = 3.53451 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 1500, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5806 mas, bmaj=0.8664 mas, bpa=-10.05 degrees
+! Estimated noise=0.0764124 mJy/beam.
+! clean: niter=1500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.98594 Jy
+! Component: 100  -  total flux cleaned = 2.52691 Jy
+! Component: 150  -  total flux cleaned = 2.79346 Jy
+! Component: 200  -  total flux cleaned = 2.95576 Jy
+! Component: 250  -  total flux cleaned = 3.06255 Jy
+! Component: 300  -  total flux cleaned = 3.14366 Jy
+! Component: 350  -  total flux cleaned = 3.20969 Jy
+! Component: 400  -  total flux cleaned = 3.26501 Jy
+! Component: 450  -  total flux cleaned = 3.31159 Jy
+! Component: 500  -  total flux cleaned = 3.35104 Jy
+! Component: 550  -  total flux cleaned = 3.38497 Jy
+! Component: 600  -  total flux cleaned = 3.41441 Jy
+! Component: 650  -  total flux cleaned = 3.44023 Jy
+! Component: 700  -  total flux cleaned = 3.46318 Jy
+! Component: 750  -  total flux cleaned = 3.48379 Jy
+! Component: 800  -  total flux cleaned = 3.50239 Jy
+! Component: 850  -  total flux cleaned = 3.51922 Jy
+! Component: 900  -  total flux cleaned = 3.53451 Jy
+! Component: 950  -  total flux cleaned = 3.54847 Jy
+! Component: 1000  -  total flux cleaned = 3.56122 Jy
+! Component: 1050  -  total flux cleaned = 3.57289 Jy
+! Component: 1100  -  total flux cleaned = 3.58276 Jy
+! Component: 1150  -  total flux cleaned = 3.59034 Jy
+! Component: 1200  -  total flux cleaned = 3.5971 Jy
+! Component: 1250  -  total flux cleaned = 3.60311 Jy
+! Component: 1300  -  total flux cleaned = 3.60782 Jy
+! Component: 1350  -  total flux cleaned = 3.61168 Jy
+! Component: 1400  -  total flux cleaned = 3.61567 Jy
+! Component: 1450  -  total flux cleaned = 3.6192 Jy
+! Component: 1500  -  total flux cleaned = 3.62202 Jy
+! Total flux subtracted in 1500 components = 3.62202 Jy
+! Clean residual min=-0.008988 max=0.007970 Jy/beam
+! Clean residual mean=-0.000003 rms=0.001986 Jy/beam
+! Combined flux in latest and established models = 3.62202 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal
+! Performing phase self-cal
+! Adding 180 model components to the UV plane model.
+! The established model now contains 180 components and 3.62202 Jy
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.086048Jy  sigma=2.292676
+! Fit after  self-cal, rms=0.083141Jy  sigma=2.211982
+mapl
+! Inverting map 
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true,true
+! clrmod: Cleared the established and tentative models.
+uvw 2,-1
+! Uniform weighting binwidth: 2 (pixels).
+! Gridding weights will be scaled by errors raised to the power -1.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.4462 mas, bmaj=0.6845 mas, bpa=-10.21 degrees
+! Estimated noise=0.222899 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.84967 Jy
+! Component: 100  -  total flux cleaned = 2.39094 Jy
+! Total flux subtracted in 100 components = 2.39094 Jy
+! Clean residual min=-0.058660 max=0.226880 Jy/beam
+! Clean residual mean=-0.000171 rms=0.012539 Jy/beam
+! Combined flux in latest and established models = 2.39094 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 1000, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5806 mas, bmaj=0.8664 mas, bpa=-10.05 degrees
+! Estimated noise=0.0764124 mJy/beam.
+! clean: niter=1000  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.98543 Jy
+! Component: 100  -  total flux cleaned = 2.527 Jy
+! Component: 150  -  total flux cleaned = 2.79582 Jy
+! Component: 200  -  total flux cleaned = 2.96023 Jy
+! Component: 250  -  total flux cleaned = 3.06878 Jy
+! Component: 300  -  total flux cleaned = 3.15105 Jy
+! Component: 350  -  total flux cleaned = 3.21787 Jy
+! Component: 400  -  total flux cleaned = 3.2738 Jy
+! Component: 450  -  total flux cleaned = 3.32089 Jy
+! Component: 500  -  total flux cleaned = 3.36083 Jy
+! Component: 550  -  total flux cleaned = 3.39495 Jy
+! Component: 600  -  total flux cleaned = 3.42449 Jy
+! Component: 650  -  total flux cleaned = 3.45042 Jy
+! Component: 700  -  total flux cleaned = 3.47332 Jy
+! Component: 750  -  total flux cleaned = 3.49362 Jy
+! Component: 800  -  total flux cleaned = 3.51171 Jy
+! Component: 850  -  total flux cleaned = 3.52806 Jy
+! Component: 900  -  total flux cleaned = 3.54293 Jy
+! Component: 950  -  total flux cleaned = 3.55648 Jy
+! Component: 1000  -  total flux cleaned = 3.56884 Jy
+! Total flux subtracted in 1000 components = 3.56884 Jy
+! Clean residual min=-0.008856 max=0.009045 Jy/beam
+! Clean residual mean=-0.000012 rms=0.002110 Jy/beam
+! Combined flux in latest and established models = 3.56884 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0,-2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 1500, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5806 mas, bmaj=0.8664 mas, bpa=-10.05 degrees
+! Estimated noise=0.0764124 mJy/beam.
+! clean: niter=1500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.98543 Jy
+! Component: 100  -  total flux cleaned = 2.527 Jy
+! Component: 150  -  total flux cleaned = 2.79582 Jy
+! Component: 200  -  total flux cleaned = 2.96023 Jy
+! Component: 250  -  total flux cleaned = 3.06878 Jy
+! Component: 300  -  total flux cleaned = 3.15105 Jy
+! Component: 350  -  total flux cleaned = 3.21787 Jy
+! Component: 400  -  total flux cleaned = 3.2738 Jy
+! Component: 450  -  total flux cleaned = 3.32089 Jy
+! Component: 500  -  total flux cleaned = 3.36083 Jy
+! Component: 550  -  total flux cleaned = 3.39495 Jy
+! Component: 600  -  total flux cleaned = 3.42449 Jy
+! Component: 650  -  total flux cleaned = 3.45042 Jy
+! Component: 700  -  total flux cleaned = 3.47332 Jy
+! Component: 750  -  total flux cleaned = 3.49362 Jy
+! Component: 800  -  total flux cleaned = 3.51171 Jy
+! Component: 850  -  total flux cleaned = 3.52806 Jy
+! Component: 900  -  total flux cleaned = 3.54293 Jy
+! Component: 950  -  total flux cleaned = 3.55648 Jy
+! Component: 1000  -  total flux cleaned = 3.56884 Jy
+! Component: 1050  -  total flux cleaned = 3.58011 Jy
+! Component: 1100  -  total flux cleaned = 3.58801 Jy
+! Component: 1150  -  total flux cleaned = 3.59462 Jy
+! Component: 1200  -  total flux cleaned = 3.5994 Jy
+! Component: 1250  -  total flux cleaned = 3.60394 Jy
+! Component: 1300  -  total flux cleaned = 3.60761 Jy
+! Component: 1350  -  total flux cleaned = 3.61112 Jy
+! Component: 1400  -  total flux cleaned = 3.61448 Jy
+! Component: 1450  -  total flux cleaned = 3.61712 Jy
+! Component: 1500  -  total flux cleaned = 3.61966 Jy
+! Total flux subtracted in 1500 components = 3.61966 Jy
+! Clean residual min=-0.008206 max=0.007575 Jy/beam
+! Clean residual mean=-0.000002 rms=0.001833 Jy/beam
+! Combined flux in latest and established models = 3.61966 Jy
+mpl
+! Syntax error in line:
+! mpl
+!   ^
+! Unable to identify keyword "mpl"
+! 
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+uvw 0,-2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0,-2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 2000, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5806 mas, bmaj=0.8664 mas, bpa=-10.05 degrees
+! Estimated noise=0.0764124 mJy/beam.
+! clean: niter=2000  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.98543 Jy
+! Component: 100  -  total flux cleaned = 2.527 Jy
+! Component: 150  -  total flux cleaned = 2.79582 Jy
+! Component: 200  -  total flux cleaned = 2.96023 Jy
+! Component: 250  -  total flux cleaned = 3.06878 Jy
+! Component: 300  -  total flux cleaned = 3.15105 Jy
+! Component: 350  -  total flux cleaned = 3.21787 Jy
+! Component: 400  -  total flux cleaned = 3.2738 Jy
+! Component: 450  -  total flux cleaned = 3.32089 Jy
+! Component: 500  -  total flux cleaned = 3.36083 Jy
+! Component: 550  -  total flux cleaned = 3.39495 Jy
+! Component: 600  -  total flux cleaned = 3.42449 Jy
+! Component: 650  -  total flux cleaned = 3.45042 Jy
+! Component: 700  -  total flux cleaned = 3.47332 Jy
+! Component: 750  -  total flux cleaned = 3.49362 Jy
+! Component: 800  -  total flux cleaned = 3.51171 Jy
+! Component: 850  -  total flux cleaned = 3.52806 Jy
+! Component: 900  -  total flux cleaned = 3.54293 Jy
+! Component: 950  -  total flux cleaned = 3.55648 Jy
+! Component: 1000  -  total flux cleaned = 3.56884 Jy
+! Component: 1050  -  total flux cleaned = 3.58011 Jy
+! Component: 1100  -  total flux cleaned = 3.58801 Jy
+! Component: 1150  -  total flux cleaned = 3.59462 Jy
+! Component: 1200  -  total flux cleaned = 3.5994 Jy
+! Component: 1250  -  total flux cleaned = 3.60394 Jy
+! Component: 1300  -  total flux cleaned = 3.60761 Jy
+! Component: 1350  -  total flux cleaned = 3.61112 Jy
+! Component: 1400  -  total flux cleaned = 3.61448 Jy
+! Component: 1450  -  total flux cleaned = 3.61712 Jy
+! Component: 1500  -  total flux cleaned = 3.61966 Jy
+! Component: 1550  -  total flux cleaned = 3.62129 Jy
+! Component: 1600  -  total flux cleaned = 3.62316 Jy
+! Component: 1650  -  total flux cleaned = 3.62471 Jy
+! Component: 1700  -  total flux cleaned = 3.62623 Jy
+! Component: 1750  -  total flux cleaned = 3.62771 Jy
+! Component: 1800  -  total flux cleaned = 3.62892 Jy
+! Component: 1850  -  total flux cleaned = 3.6301 Jy
+! Component: 1900  -  total flux cleaned = 3.63102 Jy
+! Component: 1950  -  total flux cleaned = 3.63215 Jy
+! Component: 2000  -  total flux cleaned = 3.63325 Jy
+! Total flux subtracted in 2000 components = 3.63325 Jy
+! Clean residual min=-0.007766 max=0.007080 Jy/beam
+! Clean residual mean=0.000000 rms=0.001731 Jy/beam
+! Combined flux in latest and established models = 3.63325 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+! Note that 89 components lie outside the plot.
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal
+! Performing phase self-cal
+! Adding 199 model components to the UV plane model.
+! The established model now contains 199 components and 3.63325 Jy
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.078975Jy  sigma=2.075500
+! Fit after  self-cal, rms=0.078073Jy  sigma=2.051327
+mapl
+! Inverting map 
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0,-2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 2500, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5806 mas, bmaj=0.8664 mas, bpa=-10.05 degrees
+! Estimated noise=0.0764124 mJy/beam.
+! clean: niter=2500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.98513 Jy
+! Component: 100  -  total flux cleaned = 2.52692 Jy
+! Component: 150  -  total flux cleaned = 2.79711 Jy
+! Component: 200  -  total flux cleaned = 2.96277 Jy
+! Component: 250  -  total flux cleaned = 3.07245 Jy
+! Component: 300  -  total flux cleaned = 3.15544 Jy
+! Component: 350  -  total flux cleaned = 3.22268 Jy
+! Component: 400  -  total flux cleaned = 3.27895 Jy
+! Component: 450  -  total flux cleaned = 3.32633 Jy
+! Component: 500  -  total flux cleaned = 3.36652 Jy
+! Component: 550  -  total flux cleaned = 3.40089 Jy
+! Component: 600  -  total flux cleaned = 3.43065 Jy
+! Component: 650  -  total flux cleaned = 3.45666 Jy
+! Component: 700  -  total flux cleaned = 3.47962 Jy
+! Component: 750  -  total flux cleaned = 3.49996 Jy
+! Component: 800  -  total flux cleaned = 3.51807 Jy
+! Component: 850  -  total flux cleaned = 3.53429 Jy
+! Component: 900  -  total flux cleaned = 3.5489 Jy
+! Component: 950  -  total flux cleaned = 3.56218 Jy
+! Component: 1000  -  total flux cleaned = 3.57428 Jy
+! Component: 1050  -  total flux cleaned = 3.58277 Jy
+! Component: 1100  -  total flux cleaned = 3.58947 Jy
+! Component: 1150  -  total flux cleaned = 3.59382 Jy
+! Component: 1200  -  total flux cleaned = 3.59871 Jy
+! Component: 1250  -  total flux cleaned = 3.603 Jy
+! Component: 1300  -  total flux cleaned = 3.6064 Jy
+! Component: 1350  -  total flux cleaned = 3.60934 Jy
+! Component: 1400  -  total flux cleaned = 3.61245 Jy
+! Component: 1450  -  total flux cleaned = 3.61573 Jy
+! Component: 1500  -  total flux cleaned = 3.61717 Jy
+! Component: 1550  -  total flux cleaned = 3.61913 Jy
+! Component: 1600  -  total flux cleaned = 3.62103 Jy
+! Component: 1650  -  total flux cleaned = 3.62288 Jy
+! Component: 1700  -  total flux cleaned = 3.62415 Jy
+! Component: 1750  -  total flux cleaned = 3.62565 Jy
+! Component: 1800  -  total flux cleaned = 3.62688 Jy
+! Component: 1850  -  total flux cleaned = 3.62783 Jy
+! Component: 1900  -  total flux cleaned = 3.629 Jy
+! Component: 1950  -  total flux cleaned = 3.62969 Jy
+! Component: 2000  -  total flux cleaned = 3.63082 Jy
+! Component: 2050  -  total flux cleaned = 3.6317 Jy
+! Component: 2100  -  total flux cleaned = 3.63234 Jy
+! Component: 2150  -  total flux cleaned = 3.63361 Jy
+! Component: 2200  -  total flux cleaned = 3.63465 Jy
+! Component: 2250  -  total flux cleaned = 3.63545 Jy
+! Component: 2300  -  total flux cleaned = 3.63625 Jy
+! Component: 2350  -  total flux cleaned = 3.63703 Jy
+! Component: 2400  -  total flux cleaned = 3.63799 Jy
+! Component: 2450  -  total flux cleaned = 3.63855 Jy
+! Component: 2500  -  total flux cleaned = 3.63948 Jy
+! Total flux subtracted in 2500 components = 3.63948 Jy
+! Clean residual min=-0.007194 max=0.006916 Jy/beam
+! Clean residual mean=0.000002 rms=0.001613 Jy/beam
+! Combined flux in latest and established models = 3.63947 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal true, true, 60
+! Performing amp+phase self-cal over 60 minute time intervals
+! Adding 208 model components to the UV plane model.
+! The established model now contains 208 components and 3.63947 Jy
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.075814Jy  sigma=1.974636
+! Fit after  self-cal, rms=0.057144Jy  sigma=1.550054
+corplot
+! Move the cursor into the plot window and press 'H' for help
+mapl
+! Inverting map and beam 
+! Estimated beam: bmin=0.5801 mas, bmaj=0.8721 mas, bpa=-9.302 degrees
+! Estimated noise=0.0765418 mJy/beam.
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl cln
+! restore: Substituting estimate of restoring beam from last 'invert'.
+! Restoring with beam: 0.5801 x 0.8721 at -9.302 degrees (North through East)
+! Clean map  min=-0.0069176  max=2.5052 Jy/beam
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 1,-2
+! Uniform weighting binwidth: 1 (pixels).
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.4172 mas, bmaj=0.6538 mas, bpa=-11.65 degrees
+! Estimated noise=0.1841 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.815 Jy
+! Component: 100  -  total flux cleaned = 2.35206 Jy
+! Total flux subtracted in 100 components = 2.35206 Jy
+! Clean residual min=-0.050465 max=0.233318 Jy/beam
+! Clean residual mean=-0.000117 rms=0.012079 Jy/beam
+! Combined flux in latest and established models = 2.35206 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 2500, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5801 mas, bmaj=0.8721 mas, bpa=-9.302 degrees
+! Estimated noise=0.0765418 mJy/beam.
+! clean: niter=2500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.99011 Jy
+! Component: 100  -  total flux cleaned = 2.52906 Jy
+! Component: 150  -  total flux cleaned = 2.79768 Jy
+! Component: 200  -  total flux cleaned = 2.96159 Jy
+! Component: 250  -  total flux cleaned = 3.07057 Jy
+! Component: 300  -  total flux cleaned = 3.15342 Jy
+! Component: 350  -  total flux cleaned = 3.22041 Jy
+! Component: 400  -  total flux cleaned = 3.2761 Jy
+! Component: 450  -  total flux cleaned = 3.32299 Jy
+! Component: 500  -  total flux cleaned = 3.36273 Jy
+! Component: 550  -  total flux cleaned = 3.39672 Jy
+! Component: 600  -  total flux cleaned = 3.42605 Jy
+! Component: 650  -  total flux cleaned = 3.45155 Jy
+! Component: 700  -  total flux cleaned = 3.47394 Jy
+! Component: 750  -  total flux cleaned = 3.49364 Jy
+! Component: 800  -  total flux cleaned = 3.51104 Jy
+! Component: 850  -  total flux cleaned = 3.52652 Jy
+! Component: 900  -  total flux cleaned = 3.5404 Jy
+! Component: 950  -  total flux cleaned = 3.55285 Jy
+! Component: 1000  -  total flux cleaned = 3.56408 Jy
+! Component: 1050  -  total flux cleaned = 3.5707 Jy
+! Component: 1100  -  total flux cleaned = 3.57688 Jy
+! Component: 1150  -  total flux cleaned = 3.58231 Jy
+! Component: 1200  -  total flux cleaned = 3.58742 Jy
+! Component: 1250  -  total flux cleaned = 3.59033 Jy
+! Component: 1300  -  total flux cleaned = 3.59341 Jy
+! Component: 1350  -  total flux cleaned = 3.59581 Jy
+! Component: 1400  -  total flux cleaned = 3.5981 Jy
+! Component: 1450  -  total flux cleaned = 3.59978 Jy
+! Component: 1500  -  total flux cleaned = 3.60114 Jy
+! Component: 1550  -  total flux cleaned = 3.60247 Jy
+! Component: 1600  -  total flux cleaned = 3.60402 Jy
+! Component: 1650  -  total flux cleaned = 3.60528 Jy
+! Component: 1700  -  total flux cleaned = 3.60652 Jy
+! Component: 1750  -  total flux cleaned = 3.60796 Jy
+! Component: 1800  -  total flux cleaned = 3.60914 Jy
+! Component: 1850  -  total flux cleaned = 3.61028 Jy
+! Component: 1900  -  total flux cleaned = 3.61141 Jy
+! Component: 1950  -  total flux cleaned = 3.6125 Jy
+! Component: 2000  -  total flux cleaned = 3.61335 Jy
+! Component: 2050  -  total flux cleaned = 3.61419 Jy
+! Component: 2100  -  total flux cleaned = 3.61522 Jy
+! Component: 2150  -  total flux cleaned = 3.61582 Jy
+! Component: 2200  -  total flux cleaned = 3.61681 Jy
+! Component: 2250  -  total flux cleaned = 3.61777 Jy
+! Component: 2300  -  total flux cleaned = 3.61852 Jy
+! Component: 2350  -  total flux cleaned = 3.61908 Jy
+! Component: 2400  -  total flux cleaned = 3.6198 Jy
+! Component: 2450  -  total flux cleaned = 3.62034 Jy
+! Component: 2500  -  total flux cleaned = 3.62104 Jy
+! Total flux subtracted in 2500 components = 3.62104 Jy
+! Clean residual min=-0.004797 max=0.005427 Jy/beam
+! Clean residual mean=-0.000006 rms=0.001053 Jy/beam
+! Combined flux in latest and established models = 3.62104 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw -1, 2
+! Uniform weighting is not currently selected.
+! Amplitude error weighting is not currently selected.
+! Radial weighting is not currently selected.
+clean 100, 0.3
+! Inverting map and beam 
+! Estimated beam: bmin=0.5903 mas, bmaj=0.8745 mas, bpa=-4.426 degrees
+! Estimated noise=0.0901254 mJy/beam.
+! clean: niter=100  gain=0.3  cutoff=0
+! Component: 050  -  total flux cleaned = 3.41887 Jy
+! Component: 100  -  total flux cleaned = 3.57726 Jy
+! Total flux subtracted in 100 components = 3.57726 Jy
+! Clean residual min=-0.007758 max=0.008757 Jy/beam
+! Clean residual mean=-0.000022 rms=0.001588 Jy/beam
+! Combined flux in latest and established models = 3.57726 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw -1, 2
+! Uniform weighting is not currently selected.
+! Amplitude error weighting is not currently selected.
+! Radial weighting is not currently selected.
+clean 100, 0.3
+! Inverting map and beam 
+! Estimated beam: bmin=0.5903 mas, bmaj=0.8745 mas, bpa=-4.426 degrees
+! Estimated noise=0.0901254 mJy/beam.
+! clean: niter=100  gain=0.3  cutoff=0
+! Component: 050  -  total flux cleaned = 3.41887 Jy
+! Component: 100  -  total flux cleaned = 3.57727 Jy
+! Total flux subtracted in 100 components = 3.57727 Jy
+! Clean residual min=-0.007763 max=0.008924 Jy/beam
+! Clean residual mean=-0.000023 rms=0.001591 Jy/beam
+! Combined flux in latest and established models = 3.57727 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 1500,0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5801 mas, bmaj=0.8721 mas, bpa=-9.302 degrees
+! Estimated noise=0.0765418 mJy/beam.
+! clean: niter=1500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.99011 Jy
+! Component: 100  -  total flux cleaned = 2.52906 Jy
+! Component: 150  -  total flux cleaned = 2.79768 Jy
+! Component: 200  -  total flux cleaned = 2.96159 Jy
+! Component: 250  -  total flux cleaned = 3.07057 Jy
+! Component: 300  -  total flux cleaned = 3.15342 Jy
+! Component: 350  -  total flux cleaned = 3.22041 Jy
+! Component: 400  -  total flux cleaned = 3.2761 Jy
+! Component: 450  -  total flux cleaned = 3.32299 Jy
+! Component: 500  -  total flux cleaned = 3.36273 Jy
+! Component: 550  -  total flux cleaned = 3.39674 Jy
+! Component: 600  -  total flux cleaned = 3.42607 Jy
+! Component: 650  -  total flux cleaned = 3.4516 Jy
+! Component: 700  -  total flux cleaned = 3.47401 Jy
+! Component: 750  -  total flux cleaned = 3.49373 Jy
+! Component: 800  -  total flux cleaned = 3.51116 Jy
+! Component: 850  -  total flux cleaned = 3.52666 Jy
+! Component: 900  -  total flux cleaned = 3.54054 Jy
+! Component: 950  -  total flux cleaned = 3.55298 Jy
+! Component: 1000  -  total flux cleaned = 3.56418 Jy
+! Component: 1050  -  total flux cleaned = 3.57077 Jy
+! Component: 1100  -  total flux cleaned = 3.57653 Jy
+! Component: 1150  -  total flux cleaned = 3.58193 Jy
+! Component: 1200  -  total flux cleaned = 3.58635 Jy
+! Component: 1250  -  total flux cleaned = 3.58989 Jy
+! Component: 1300  -  total flux cleaned = 3.59235 Jy
+! Component: 1350  -  total flux cleaned = 3.59472 Jy
+! Component: 1400  -  total flux cleaned = 3.59701 Jy
+! Component: 1450  -  total flux cleaned = 3.5984 Jy
+! Component: 1500  -  total flux cleaned = 3.59976 Jy
+! Total flux subtracted in 1500 components = 3.59976 Jy
+! Clean residual min=-0.006218 max=0.006865 Jy/beam
+! Clean residual mean=-0.000010 rms=0.001289 Jy/beam
+! Combined flux in latest and established models = 3.59976 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0,-2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 2500, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5801 mas, bmaj=0.8721 mas, bpa=-9.302 degrees
+! Estimated noise=0.0765418 mJy/beam.
+! clean: niter=2500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.99011 Jy
+! Component: 100  -  total flux cleaned = 2.52906 Jy
+! Component: 150  -  total flux cleaned = 2.79768 Jy
+! Component: 200  -  total flux cleaned = 2.96159 Jy
+! Component: 250  -  total flux cleaned = 3.07057 Jy
+! Component: 300  -  total flux cleaned = 3.15342 Jy
+! Component: 350  -  total flux cleaned = 3.22041 Jy
+! Component: 400  -  total flux cleaned = 3.2761 Jy
+! Component: 450  -  total flux cleaned = 3.32299 Jy
+! Component: 500  -  total flux cleaned = 3.36273 Jy
+! Component: 550  -  total flux cleaned = 3.39674 Jy
+! Component: 600  -  total flux cleaned = 3.42607 Jy
+! Component: 650  -  total flux cleaned = 3.4516 Jy
+! Component: 700  -  total flux cleaned = 3.47401 Jy
+! Component: 750  -  total flux cleaned = 3.49373 Jy
+! Component: 800  -  total flux cleaned = 3.51116 Jy
+! Component: 850  -  total flux cleaned = 3.52666 Jy
+! Component: 900  -  total flux cleaned = 3.54054 Jy
+! Component: 950  -  total flux cleaned = 3.55298 Jy
+! Component: 1000  -  total flux cleaned = 3.56418 Jy
+! Component: 1050  -  total flux cleaned = 3.57077 Jy
+! Component: 1100  -  total flux cleaned = 3.57653 Jy
+! Component: 1150  -  total flux cleaned = 3.58193 Jy
+! Component: 1200  -  total flux cleaned = 3.58635 Jy
+! Component: 1250  -  total flux cleaned = 3.58989 Jy
+! Component: 1300  -  total flux cleaned = 3.59235 Jy
+! Component: 1350  -  total flux cleaned = 3.59472 Jy
+! Component: 1400  -  total flux cleaned = 3.59701 Jy
+! Component: 1450  -  total flux cleaned = 3.5984 Jy
+! Component: 1500  -  total flux cleaned = 3.59976 Jy
+! Component: 1550  -  total flux cleaned = 3.60108 Jy
+! Component: 1600  -  total flux cleaned = 3.60264 Jy
+! Component: 1650  -  total flux cleaned = 3.60388 Jy
+! Component: 1700  -  total flux cleaned = 3.60511 Jy
+! Component: 1750  -  total flux cleaned = 3.60653 Jy
+! Component: 1800  -  total flux cleaned = 3.60769 Jy
+! Component: 1850  -  total flux cleaned = 3.60883 Jy
+! Component: 1900  -  total flux cleaned = 3.60993 Jy
+! Component: 1950  -  total flux cleaned = 3.6108 Jy
+! Component: 2000  -  total flux cleaned = 3.61186 Jy
+! Component: 2050  -  total flux cleaned = 3.61249 Jy
+! Component: 2100  -  total flux cleaned = 3.61371 Jy
+! Component: 2150  -  total flux cleaned = 3.61432 Jy
+! Component: 2200  -  total flux cleaned = 3.61549 Jy
+! Component: 2250  -  total flux cleaned = 3.61606 Jy
+! Component: 2300  -  total flux cleaned = 3.61681 Jy
+! Component: 2350  -  total flux cleaned = 3.61774 Jy
+! Component: 2400  -  total flux cleaned = 3.61846 Jy
+! Component: 2450  -  total flux cleaned = 3.619 Jy
+! Component: 2500  -  total flux cleaned = 3.6197 Jy
+! Total flux subtracted in 2500 components = 3.6197 Jy
+! Clean residual min=-0.005014 max=0.006029 Jy/beam
+! Clean residual mean=-0.000006 rms=0.001064 Jy/beam
+! Combined flux in latest and established models = 3.6197 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal
+! Performing phase self-cal
+! Adding 204 model components to the UV plane model.
+! The established model now contains 204 components and 3.6197 Jy
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.055949Jy  sigma=1.528223
+! Fit after  self-cal, rms=0.055555Jy  sigma=1.517720
+mapl
+! Inverting map 
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal true, true 20
+! Syntax error in line:
+! selfcal true, true 20
+!                     ^
+! Found constant: 20.000 
+! Where an operator was expected
+! 
+selfcal true, true,20
+! Performing amp+phase self-cal over 20 minute time intervals
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.055555Jy  sigma=1.517720
+! Fit after  self-cal, rms=0.053011Jy  sigma=1.440586
+mapl
+! Inverting map and beam 
+! Estimated beam: bmin=0.5803 mas, bmaj=0.8763 mas, bpa=-8.922 degrees
+! Estimated noise=0.0766368 mJy/beam.
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl cln
+! restore: Substituting estimate of restoring beam from last 'invert'.
+! Restoring with beam: 0.5803 x 0.8763 at -8.922 degrees (North through East)
+! Clean map  min=-0.0052207  max=2.5131 Jy/beam
+! 
+! Move the cursor into the plot window and press 'H' for help
+loglev
+! Syntax error in line:
+! loglev
+!      ^
+! loglevs() requires at least 1 argument(s).
+! 
+loglev 0.5
+! The new contour levels are:
+!  -0.5 0.5 1 2 4 8 16 32 64
+mapl cln
+! 
+! Move the cursor into the plot window and press 'H' for help
+loglev 0.1
+! The new contour levels are:
+!  -0.1 0.1 0.2 0.4 0.8 1.6 3.2 6.4 12.8 25.6 51.2
+mapl cln
+! 
+! Move the cursor into the plot window and press 'H' for help
+dev
+MAPL
+! Inverting map 
+! 
+! Move the cursor into the plot window and press 'H' for help
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+! Note that 148 components lie outside the plot.
+clrmod
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+mapl
+! Inverting map 
+! 
+! Move the cursor into the plot window and press 'H' for help
+uvw -1, 2
+! Uniform weighting is not currently selected.
+! Amplitude error weighting is not currently selected.
+! Radial weighting is not currently selected.
+clran 100, 0.03
+! Syntax error in line:
+! clran 100, 0.03
+!     ^
+! Unable to identify keyword "clran"
+! 
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5903 mas, bmaj=0.8745 mas, bpa=-4.426 degrees
+! Estimated noise=0.0902981 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.99955 Jy
+! Component: 100  -  total flux cleaned = 2.53197 Jy
+! Total flux subtracted in 100 components = 2.53197 Jy
+! Clean residual min=-0.045015 max=0.232605 Jy/beam
+! Clean residual mean=-0.000391 rms=0.015417 Jy/beam
+! Combined flux in latest and established models = 2.53197 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 1500, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5803 mas, bmaj=0.8763 mas, bpa=-8.922 degrees
+! Estimated noise=0.0766368 mJy/beam.
+! clean: niter=1500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.99364 Jy
+! Component: 100  -  total flux cleaned = 2.53054 Jy
+! Component: 150  -  total flux cleaned = 2.79796 Jy
+! Component: 200  -  total flux cleaned = 2.96078 Jy
+! Component: 250  -  total flux cleaned = 3.06935 Jy
+! Component: 300  -  total flux cleaned = 3.15208 Jy
+! Component: 350  -  total flux cleaned = 3.21882 Jy
+! Component: 400  -  total flux cleaned = 3.27414 Jy
+! Component: 450  -  total flux cleaned = 3.32063 Jy
+! Component: 500  -  total flux cleaned = 3.36007 Jy
+! Component: 550  -  total flux cleaned = 3.39388 Jy
+! Component: 600  -  total flux cleaned = 3.42303 Jy
+! Component: 650  -  total flux cleaned = 3.44831 Jy
+! Component: 700  -  total flux cleaned = 3.47044 Jy
+! Component: 750  -  total flux cleaned = 3.48989 Jy
+! Component: 800  -  total flux cleaned = 3.50704 Jy
+! Component: 850  -  total flux cleaned = 3.52226 Jy
+! Component: 900  -  total flux cleaned = 3.53587 Jy
+! Component: 950  -  total flux cleaned = 3.54808 Jy
+! Component: 1000  -  total flux cleaned = 3.5586 Jy
+! Component: 1050  -  total flux cleaned = 3.56502 Jy
+! Component: 1100  -  total flux cleaned = 3.57027 Jy
+! Component: 1150  -  total flux cleaned = 3.57555 Jy
+! Component: 1200  -  total flux cleaned = 3.57984 Jy
+! Component: 1250  -  total flux cleaned = 3.58173 Jy
+! Component: 1300  -  total flux cleaned = 3.58357 Jy
+! Component: 1350  -  total flux cleaned = 3.58533 Jy
+! Component: 1400  -  total flux cleaned = 3.58704 Jy
+! Component: 1450  -  total flux cleaned = 3.58843 Jy
+! Component: 1500  -  total flux cleaned = 3.59004 Jy
+! Total flux subtracted in 1500 components = 3.59004 Jy
+! Clean residual min=-0.005661 max=0.007319 Jy/beam
+! Clean residual mean=-0.000010 rms=0.001172 Jy/beam
+! Combined flux in latest and established models = 3.59005 Jy
+mal
+! Syntax error in line:
+! mal
+!   ^
+! Unable to identify keyword "mal"
+! 
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+mapl cln
+! restore: Substituting estimate of restoring beam from last 'invert'.
+! Restoring with beam: 0.5803 x 0.8763 at -8.922 degrees (North through East)
+! Clean map  min=-0.0048523  max=2.5158 Jy/beam
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal true, true 10
+! Syntax error in line:
+! selfcal true, true 10
+!                     ^
+! Found constant: 10.000 
+! Where an operator was expected
+! 
+selfcal true, true, 10
+! Performing amp+phase self-cal over 10 minute time intervals
+! Adding 161 model components to the UV plane model.
+! The established model now contains 161 components and 3.59005 Jy
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.059513Jy  sigma=1.649437
+! Fit after  self-cal, rms=0.058171Jy  sigma=1.592365
+mapl
+! Inverting map and beam 
+! Estimated beam: bmin=0.5814 mas, bmaj=0.8822 mas, bpa=-8.561 degrees
+! Estimated noise=0.0767671 mJy/beam.
+! 
+! Move the cursor into the plot window and press 'H' for help
+! 
+! Abort command (y/n) or quit program [without saving data] (q)? 
+! Abort command (y/n) or quit program [without saving data] (q)? Abort command (y/n) or quit program [without saving data] (q)? Abort command (y/n) or quit program [without saving data] (q)? Abort command (y/n) or quit program [without saving data] (q)? Abort command (y/n) or quit program [without saving data] (q)? Abort command (y/n) or quit program [without saving data] (q)? Abort command (y/n) or quit program [without saving data] (q)? Error occured in command: maplot
+! 
+save
+! Syntax error in line:
+! save
+!    ^
+! save() requires at least 1 argument(s).
+! 
+save nikmentorstvo
+! Writing UV FITS file: nikmentorstvo.uvf
+! Writing 161 model components to file: nikmentorstvo.mod
+! wwins: Wrote 33 windows to nikmentorstvo.win
+! restore: Substituting estimate of restoring beam from last 'invert'.
+! Restoring with beam: 0.5814 x 0.8822 at -8.561 degrees (North through East)
+! Clean map  min=-0.0050223  max=2.5222 Jy/beam
+! Writing clean map to FITS file: nikmentorstvo.fits
+! Writing difmap environment to: nikmentorstvo.par
+selfcal
+! Performing phase self-cal
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.058171Jy  sigma=1.592365
+! Fit after  self-cal, rms=0.058205Jy  sigma=1.591989
+mapl
+! Inverting map 
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod true, true
+! clrmod: Cleared the established and tentative models.
+uvw 1, -2
+! Uniform weighting binwidth: 1 (pixels).
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 100, 0.0.3
+! Syntax error in line:
+! clean 100, 0.0.3
+!              ^
+! Unable to identify "." with an operator.
+! 
+clean 100, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.4175 mas, bmaj=0.6611 mas, bpa=-10.7 degrees
+! Estimated noise=0.184954 mJy/beam.
+! clean: niter=100  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.83099 Jy
+! Component: 100  -  total flux cleaned = 2.36121 Jy
+! Total flux subtracted in 100 components = 2.36121 Jy
+! Clean residual min=-0.048848 max=0.225852 Jy/beam
+! Clean residual mean=-0.000118 rms=0.011926 Jy/beam
+! Combined flux in latest and established models = 2.36121 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+clrmod
+! clrmod: Cleared the tentative model.
+uvw 0, -2
+! Uniform weighting is not currently selected.
+! Gridding weights will be scaled by errors raised to the power -2.
+! Radial weighting is not currently selected.
+clean 2500, 0.03
+! Inverting map and beam 
+! Estimated beam: bmin=0.5814 mas, bmaj=0.8822 mas, bpa=-8.561 degrees
+! Estimated noise=0.0767671 mJy/beam.
+! clean: niter=2500  gain=0.03  cutoff=0
+! Component: 050  -  total flux cleaned = 1.99847 Jy
+! Component: 100  -  total flux cleaned = 2.53233 Jy
+! Component: 150  -  total flux cleaned = 2.79786 Jy
+! Component: 200  -  total flux cleaned = 2.95914 Jy
+! Component: 250  -  total flux cleaned = 3.06684 Jy
+! Component: 300  -  total flux cleaned = 3.14911 Jy
+! Component: 350  -  total flux cleaned = 3.21535 Jy
+! Component: 400  -  total flux cleaned = 3.27012 Jy
+! Component: 450  -  total flux cleaned = 3.31608 Jy
+! Component: 500  -  total flux cleaned = 3.35501 Jy
+! Component: 550  -  total flux cleaned = 3.38838 Jy
+! Component: 600  -  total flux cleaned = 3.41713 Jy
+! Component: 650  -  total flux cleaned = 3.44198 Jy
+! Component: 700  -  total flux cleaned = 3.46371 Jy
+! Component: 750  -  total flux cleaned = 3.4828 Jy
+! Component: 800  -  total flux cleaned = 3.49961 Jy
+! Component: 850  -  total flux cleaned = 3.51453 Jy
+! Component: 900  -  total flux cleaned = 3.52785 Jy
+! Component: 950  -  total flux cleaned = 3.53977 Jy
+! Component: 1000  -  total flux cleaned = 3.54798 Jy
+! Component: 1050  -  total flux cleaned = 3.55399 Jy
+! Component: 1100  -  total flux cleaned = 3.55959 Jy
+! Component: 1150  -  total flux cleaned = 3.5631 Jy
+! Component: 1200  -  total flux cleaned = 3.56479 Jy
+! Component: 1250  -  total flux cleaned = 3.56675 Jy
+! Component: 1300  -  total flux cleaned = 3.56864 Jy
+! Component: 1350  -  total flux cleaned = 3.57047 Jy
+! Component: 1400  -  total flux cleaned = 3.57196 Jy
+! Component: 1450  -  total flux cleaned = 3.57339 Jy
+! Component: 1500  -  total flux cleaned = 3.57506 Jy
+! Component: 1550  -  total flux cleaned = 3.57641 Jy
+! Component: 1600  -  total flux cleaned = 3.57772 Jy
+! Component: 1650  -  total flux cleaned = 3.57899 Jy
+! Component: 1700  -  total flux cleaned = 3.58047 Jy
+! Component: 1750  -  total flux cleaned = 3.58167 Jy
+! Component: 1800  -  total flux cleaned = 3.58307 Jy
+! Component: 1850  -  total flux cleaned = 3.58375 Jy
+! Component: 1900  -  total flux cleaned = 3.58486 Jy
+! Component: 1950  -  total flux cleaned = 3.58573 Jy
+! Component: 2000  -  total flux cleaned = 3.58657 Jy
+! Component: 2050  -  total flux cleaned = 3.5872 Jy
+! Component: 2100  -  total flux cleaned = 3.58801 Jy
+! Component: 2150  -  total flux cleaned = 3.589 Jy
+! Component: 2200  -  total flux cleaned = 3.58958 Jy
+! Component: 2250  -  total flux cleaned = 3.59015 Jy
+! Component: 2300  -  total flux cleaned = 3.59089 Jy
+! Component: 2350  -  total flux cleaned = 3.59143 Jy
+! Component: 2400  -  total flux cleaned = 3.59215 Jy
+! Component: 2450  -  total flux cleaned = 3.59284 Jy
+! Component: 2500  -  total flux cleaned = 3.59336 Jy
+! Total flux subtracted in 2500 components = 3.59336 Jy
+! Clean residual min=-0.004602 max=0.006120 Jy/beam
+! Clean residual mean=-0.000008 rms=0.000926 Jy/beam
+! Combined flux in latest and established models = 3.59336 Jy
+mapl
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal true, true 5
+! Syntax error in line:
+! selfcal true, true 5
+!                    ^
+! Found constant: 5.000 
+! Where an operator was expected
+! 
+selfcal true, true, 5
+! Performing amp+phase self-cal over 5 minute time intervals
+! Adding 178 model components to the UV plane model.
+! The established model now contains 178 components and 3.59336 Jy
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.053837Jy  sigma=1.457256
+! Fit after  self-cal, rms=0.053188Jy  sigma=1.431071
+mapl
+! Inverting map and beam 
+! Estimated beam: bmin=0.5822 mas, bmaj=0.885 mas, bpa=-8.451 degrees
+! Estimated noise=0.0768294 mJy/beam.
+! 
+! Move the cursor into the plot window and press 'H' for help
+selfcal true, true, 2
+! Performing amp+phase self-cal over 2 minute time intervals
+! 
+! Correcting IF 1.
+! 
+! Correcting IF 2.
+! 
+! Correcting IF 3.
+! 
+! Correcting IF 4.
+! 
+! Correcting IF 5.
+! 
+! Correcting IF 6.
+! 
+! Correcting IF 7.
+! 
+! Correcting IF 8.
+! 
+! Fit before self-cal, rms=0.053188Jy  sigma=1.431071
+! Fit after  self-cal, rms=0.052547Jy  sigma=1.410763
+corplot
+! Move the cursor into the plot window and press 'H' for help
+radplot
+! Using default options string "m1"
+! Move the cursor into the plot window and press 'H' for help
+! Applying 1 buffered edits.
+mapl cln
+! Inverting map and beam 
+! Estimated beam: bmin=0.5822 mas, bmaj=0.885 mas, bpa=-8.442 degrees
+! Estimated noise=0.0768297 mJy/beam.
+! restore: Substituting estimate of restoring beam from last 'invert'.
+! Restoring with beam: 0.5822 x 0.885 at -8.442 degrees (North through East)
+! Clean map  min=-0.0039715  max=2.5275 Jy/beam
+! 
+! Move the cursor into the plot window and press 'H' for help
+dev 2200.png/PNG
+! Attempting to open device: '2200.png/PNG'
+mapl cln
+dev /xv
+! Attempting to open device: '/xv'
+! Error occured in command: device
+! 
+dev /xw
+! Attempting to open device: '/xw'
+mapl cln
+! 
+! Move the cursor into the plot window and press 'H' for help
+dev 2200.png/PNG
+! Attempting to open device: '2200.png/PNG'
+mapcolor none
+! Mapplot colormap: none, contrast: 4.1917 brightness: 0.191458.
+mapl cln
+dev /xw
+! Attempting to open device: '/xw'
+quit
+! Quitting program
+! Log file difmap.log_4 closed on Tue Nov 26 20:28:23 2019
